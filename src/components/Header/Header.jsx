@@ -28,3 +28,5 @@ Header.propTypes = {
   loggedIn: PropTypes.bool.isRequired,
   currentRoute: PropTypes.string.isRequired,
 };
+
+export default Header

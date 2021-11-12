@@ -36,7 +36,6 @@ export default function Header({children}) {
         <div className={clsx(
               styles.route
             )}>
-          <h1> Animal Shelter </h1>
           <nav>
             <Link href="/"><a> About </a></Link>
             <Link href="/adopt"><a> Adopt </a></Link>

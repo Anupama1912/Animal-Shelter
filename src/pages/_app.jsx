@@ -5,7 +5,7 @@ import Head from "next/head";
 import Router from "next/router";
 import { getCurrentUser } from "../actions/User";
 import urls from "../../utils/urls";
-import Header from "../components/Header";
+import Header from "../components/Header/Header";
 import "focus-visible/dist/focus-visible.min.js";
 import "normalize.css";
 import "../../public/static/styles/App.css";

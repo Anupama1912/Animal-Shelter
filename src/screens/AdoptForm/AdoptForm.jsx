@@ -1,6 +1,26 @@
 import React from "react";
 import style from './AdoptForm.module.css';
 
+const AdoptRequest = async event => {
+    event.preventDefault()
+
+    const res = await fetch('http://localhost:3001/adopters', {
+      body: JSON.stringify({
+        name: event.target.name.value,
+        email: event.target.email.value,
+        Location: event.target.Location.value,
+        phone: event.target.phone.value,
+        description: event.target.description.value,
+      }),
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      method: 'POST'
+    })
+
+    const result = await res.json()
+  }
+
 export default function AdoptFormScreen( {animal} ) {
     return (
         <div className = {style.form}>
@@ -19,7 +39,7 @@ export default function AdoptFormScreen( {animal} ) {
             massa quis, efficitur laoreet ligula. Sed ut purus sapien. Morbi sagittis felis porta, commodo
              orci vel, auctor tellus. Donec sagittis maximus nisi quis tincidunt.
             </p>
-            <form className= {style.form}>
+            <form onSubmit = {AdoptRequest} className= {style.form}>
                 <div className = {style.item}>
                     <label htmlFor="name">Name: </label>
                     <input className = {style.marginc}  type="text" autoComplete="name" id="name" required/>

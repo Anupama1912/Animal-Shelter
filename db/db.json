@@ -63,5 +63,16 @@
         "img": "/static/image/cat.jpg",
         "isAdopted": "no"
       }
+    ],
+    "adopters": [
+      {
+        "id": "1",
+        "name": "Johnny",
+        "breed": "dog",
+        "age": "5",
+        "location": "Atlanta, GA",
+        "img": "/static/image/dog.jpg",
+        "isAdopted": "no"
+      }
     ]
   }

@@ -3,7 +3,7 @@ import style from './AdoptForm.module.css';
 
 export default function AdoptFormScreen( {animal} ) {
     return (
-        <div className = {style.container}>
+        <div className = {style.form}>
             <h3>Catscout</h3>
             <img src={animal.img} alt="" />
                     <p>Name: {animal.name}</p>
@@ -20,20 +20,24 @@ export default function AdoptFormScreen( {animal} ) {
              orci vel, auctor tellus. Donec sagittis maximus nisi quis tincidunt.
             </p>
             <form className= {style.form}>
-                <label htmlFor="name">Name: </label>
-                <input type="text" autoComplete="name" id="name" required/>
+                <div className = {style.item}>
+                    <label htmlFor="name">Name: </label>
+                    <input className = {style.marginc}  type="text" autoComplete="name" id="name" required/>
+                    <label className = {style.margina} htmlFor="email">Email: </label>
+                    <input className = {style.marginc} type="text" autoComplete="species" id="email" required/>
+                </div>
                 <br />
-                <label htmlFor="species">Species: </label>
-                <input type="text" autoComplete="species" id="species" required/>
+                <div className = {style.item}>
+                    <label htmlFor="Location">Location: </label>
+                    <input type="text" name="" id="Location" required/>
+                    <label className = {style.marginb} htmlFor="phone" >Phone Number: </label>
+                    <input className = {style.marginc} type="text" name="" id="phone" required/>
+                </div>
                 <br />
-                <label htmlFor="Location">Location: </label>
-                <input type="text" name="" id="Location" required/>
+                <label htmlFor="description">Why do you want to adopt {animal.name}: </label>
                 <br />
-                <label htmlFor="description" >Please introduce this to us all: </label>
-                <input type="text" name="" id="description" required/>
-                <br />
-                <label htmlFor="Image">Submit an image for this animal: </label>
-                <input type="File" id="Image"/>
+                <textarea name="description" id="description" cols="80" rows="10"></textarea>
+                {/* <input className = {style.description} type="text" name="" id="description" required/> */}
                 <br />
                 <button type="submit">Submit</button>
             </form>

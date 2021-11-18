@@ -4,7 +4,7 @@ import style from './AnimalCard.module.css'
 
 export default function AnimalCard({animal}) {
     return (
-        <Link href={`/browse/${animal.id}`}>
+        <Link href={`/adopt/${animal.id}`}>
             <div className = {style.container}>
                 <img src={animal.img}/>
                 <div className = {style.text}>

@@ -6,6 +6,6 @@ export default function AdminPage() {
 
   
   return (
-    <h2>admin</h2>
+    <h2>Catscout</h2>
   )
 }

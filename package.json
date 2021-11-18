@@ -13,6 +13,7 @@
   },
   "homepage": "https://github.com/GTBitsOfGood/nextjs-starter#readme",
   "scripts": {
+    "start-db": "json-server -p 3001 --watch ./db/db.json",
     "dev": "next -p 3000",
     "build": "next build",
     "start": "next build && next start",
@@ -48,7 +49,7 @@
     "lodash": "^4.17.21",
     "mongodb": "^4.0.0",
     "mongoose": "^5.13.2",
-    "next": "^11.0.1",
+    "next": "^11.1.2",
     "next-images": "^1.8.1",
     "normalize.css": "^8.0.1",
     "prop-types": "^15.7.2",

@@ -1,6 +1,6 @@
 .list {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: row;
     flex-wrap: wrap;
     max-width: 100%;

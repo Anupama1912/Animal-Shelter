@@ -11,6 +11,7 @@ const AdoptRequest = async event => {
         Location: event.target.Location.value,
         phone: event.target.phone.value,
         description: event.target.description.value,
+        which: event.target.which.name,
       }),
       headers: {
         'Content-Type': 'application/json'
@@ -22,6 +23,7 @@ const AdoptRequest = async event => {
   }
 
 export default function AdoptFormScreen( {animal} ) {
+    let showMe = false
     return (
         <div className = {style.form}>
             <h3>Catscout</h3>
@@ -59,6 +61,7 @@ export default function AdoptFormScreen( {animal} ) {
                 <textarea name="description" id="description" cols="80" rows="10"></textarea>
                 {/* <input className = {style.description} type="text" name="" id="description" required/> */}
                 <br />
+                <input style={{display: showMe?"block":"none"}} type="text" id="which" name={animal.name}/>
                 <button type="submit">Submit</button>
             </form>
         </div>

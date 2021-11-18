@@ -6,7 +6,7 @@ export default function AnimalCard({animal}) {
     return (
         <Link href={`/adopt/${animal.id}`}>
             <div className = {style.container}>
-                <img src={animal.img}/>
+                <img className = {style.image} src={animal.img}/>
                 <div className = {style.text}>
                     <p>Name: {animal.name}</p>
                     <p>Age: {animal.age}</p>

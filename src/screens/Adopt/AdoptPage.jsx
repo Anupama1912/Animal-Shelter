@@ -7,7 +7,7 @@ export default function AdoptPage({animals}) {
   console.log(animals);
   return (
     <div className={style.container}>
-      <h1> Browse Shelter Animals </h1>
+      <h1> Catscout </h1>
       <div className={style.list}>
         {
           animals && animals.map(animal => <AnimalCard animal={animal} key={animal.id}/>)

@@ -6,7 +6,7 @@
       "breed": "dog",
       "age": "5",
       "location": "Atlanta, GA",
-      "img": "/static/image/dog.jpg",
+      "img": "/static/image/cat.jpg",
       "isAdopted": "no"
     },
     {

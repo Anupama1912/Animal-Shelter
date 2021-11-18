@@ -1,0 +1,67 @@
+{
+    "animals": [
+      {
+        "id": "1",
+        "name": "Johnny",
+        "breed": "dog",
+        "age": "5",
+        "location": "Atlanta, GA",
+        "img": "/static/image/dog.jpg",
+        "isAdopted": "no"
+      },
+      {
+        "id": "2",
+        "name": "Cecil",
+        "breed": "cat",
+        "age": "5",
+        "location": "Atlanta, GA",
+        "img": "/static/image/cat.jpg",
+        "isAdopted": "no"
+      },
+      {
+        "id": "3",
+        "name": "Cecil",
+        "breed": "cat",
+        "age": "2",
+        "location": "Atlanta, GA",
+        "img": "/static/image/cat.jpg",
+        "isAdopted": "no"
+      },
+      {
+        "id": "4",
+        "name": "Cecil",
+        "breed": "cat",
+        "age": "7",
+        "location": "Atlanta, GA",
+        "img": "/static/image/cat.jpg",
+        "isAdopted": "no"
+      },
+      {
+        "id": "5",
+        "name": "Cecil",
+        "breed": "cat",
+        "age": "3",
+        "location": "Atlanta, GA",
+        "img": "/static/image/cat.jpg",
+        "isAdopted": "no"
+      },
+      {
+        "id": "6",
+        "name": "Cecil",
+        "breed": "cat",
+        "age": "2",
+        "location": "Atlanta, GA",
+        "img": "/static/image/cat.jpg",
+        "isAdopted": "no"
+      },
+      {
+        "id": "7",
+        "name": "Cecil",
+        "breed": "cat",
+        "age": "H7",
+        "location": "Atlanta, GA",
+        "img": "/static/image/cat.jpg",
+        "isAdopted": "no"
+      }
+    ]
+  }

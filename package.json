@@ -13,6 +13,7 @@
   },
   "homepage": "https://github.com/GTBitsOfGood/nextjs-starter#readme",
   "scripts": {
+    "start-db": "json-server -p 3001 --watch ./db/db.json",
     "dev": "next -p 3000",
     "build": "next build",
     "start": "next build && next start",

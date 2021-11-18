@@ -1,32 +1,17 @@
 import React from "react";
-import clsx from "clsx";
-import PropTypes from "prop-types";
-import NavLink from "../NavLink";
-import routes from "./routes";
+import Link from 'next/link'
 import styles from "./Header.module.css";
 
-const Header = ({ loggedIn, currentRoute }) => (
-  <div className={styles.root}>
-    {routes
-      .filter((route) => (loggedIn && route.auth) || (!loggedIn && !route.auth))
-      .map(({ name, link, atEnd }) => (
-        <NavLink href={link} key={name}>
-          <div
-            className={clsx(
-              atEnd ? styles.endRoute : styles.route,
-              currentRoute === link && styles.selected
-            )}
-          >
-            {name}
-          </div>
-        </NavLink>
-      ))}
-  </div>
-);
+export default function Headerr() {
+  return (
+    <div className={styles.navbar}>
+      <h1> <Link className={styles.text} href="/"><a> CatScout </a></Link> </h1> 
+        <nav className={styles.menu}>
+          <Link href="/"><a> About </a></Link>
+          <Link href="/adopt"><a> Adopt </a></Link>
+          <Link href="/admin"><a> Admin </a></Link>
+        </nav>
+    </div>
+  )
+}
 
-Header.propTypes = {
-  loggedIn: PropTypes.bool.isRequired,
-  currentRoute: PropTypes.string.isRequired,
-};
-
-export default Header

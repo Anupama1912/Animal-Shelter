@@ -1,25 +1,18 @@
-.root {
+.navbar {
     display: flex;
-    flex-direction: row;
-    padding: 8px 4px;
-    background-color: #004b4b;
-    align-items: center;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 100%;
+    background-color: azure;
 }
 
-.route, .endRoute {
-    color: white;
-    padding: 12px 24px;
-    margin: 0 16px;
-    font-size: 20px;
-    cursor: pointer;
-    border-radius: 8px;
-    transition: 0.25s background-color;
-}
 
-.route:hover, .endRoute:hover, .selected {
-    background-color: #002d2d;
-}
+.navbar :any-link {
+    color: black;
+    text-decoration: none;
+    margin: 20px;  
 
-.endRoute {
-    margin-left: auto;
 }
+  
+
+  

@@ -21,9 +21,9 @@ export default function Headerr({ children }) {
         <div className={styles.navbar}>
           <h1> Catscout </h1>
           <nav>
-            <Link href="/"><a> About </a></Link>
-            <Link href="/adopt"><a> Adopt </a></Link>
-            <Link href="/admin"><a> Admin </a></Link>
+            <Link className = {styles.link} href="/"><a> About </a></Link>
+            <Link className = {styles.link} href="/adopt"><a> Adopt </a></Link>
+            <Link className = {styles.link} href="/admin"><a> Admin </a></Link>
           </nav>
         </div>
       </header>

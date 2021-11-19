@@ -3,7 +3,7 @@
     justify-content: space-between;
     align-items: baseline;
     width: 100%;
-    background-color: azure;
+    background-color: #DBE2EF;
 }
 
 
@@ -12,6 +12,10 @@
     text-decoration: none;
     margin: 20px;  
 
+}
+
+.layout {
+    margin-bottom: 0;
 }
   
 

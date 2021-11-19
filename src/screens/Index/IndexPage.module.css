@@ -4,16 +4,19 @@
 
 .left {
     width: 50%;
-    margin: 20px;
-    text-align: center;
+    margin-right: 20px;
 }
 
 .right {
     width: 50%;
-    margin: 20px;
 }
 
 .mainContent{
     display: flex;
     justify-content: center;
+    align-items: center;
+    margin: 40px;
+    padding: 20px;
+    background-color: #F9F7F7;
+
 }

@@ -10,6 +10,11 @@
     padding: 1rem;
 }
 
+.container:hover {
+    border: 1px #DBE2EF solid;
+    cursor: pointer;
+}
+
 .text {
     display: flex;
     align-items: center;

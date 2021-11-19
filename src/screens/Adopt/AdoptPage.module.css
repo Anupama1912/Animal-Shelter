@@ -1,6 +1,7 @@
 .list {
     display: flex;
     align-items: flex-start;
+    justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
   }
@@ -9,4 +10,8 @@
     margin-top: 2.5rem;
     margin-left: 4rem;
     background-color: white;
+  }
+
+  .heading {
+    text-align: center;
   }

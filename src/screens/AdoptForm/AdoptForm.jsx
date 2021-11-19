@@ -63,7 +63,7 @@ export default function AdoptFormScreen( {animal} ) {
             </div>
             <br />
             <div className = {style.item}>
-              <label htmlFor="Location">Location: </label>
+              <label className={style.margind} htmlFor="Location">Location: </label>
               <input type="text" name="" id="Location" required/>
               <label className = {style.marginb} htmlFor="phone" >Phone Number: </label>
               <input className = {style.marginc} type="tel" id="phone" name="phone" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required/>
@@ -79,22 +79,6 @@ export default function AdoptFormScreen( {animal} ) {
           </form>
         </div>
       </div>
-
-
-
-
-
-        // <div className = {style.form}>
-        //   <div className = {style.top}> 
-        //     <div className - {style.left}>
-              
-        //     </div>
-            
-        //     </div> 
-        //     </div>
-            
-        // </div>
-        
 
     )
 }

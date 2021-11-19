@@ -19,7 +19,7 @@ export default function Headerr({ children }) {
     <div className={styles.layout}>
       <header>
         <div className={styles.navbar}>
-          <h1> Animal Shelter </h1>
+          <h1> Catscout </h1>
           <nav>
             <Link href="/"><a> About </a></Link>
             <Link href="/adopt"><a> Adopt </a></Link>

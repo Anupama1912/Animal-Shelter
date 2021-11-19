@@ -58,7 +58,7 @@
       "id": "7",
       "name": "Cecil",
       "breed": "cat",
-      "age": "H7",
+      "age": "7",
       "location": "Atlanta, GA",
       "img": "/static/image/cat.jpg",
       "isAdopted": "no"

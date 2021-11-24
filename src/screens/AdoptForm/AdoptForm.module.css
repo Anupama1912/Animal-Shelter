@@ -47,19 +47,21 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    width: 100%
 }
 .margina {
     margin-left: 8rem;
 }
 
 .marginb {
-    margin-left: 3.5rem;
+    margin-left: 2.5rem;
 }
 
 .marginc {
     margin-left: 1rem;
 }
 .margind {
-    margin-right: 0px;
+    margin-right: 1rem;
+    margin-left: -0.2rem;
 }

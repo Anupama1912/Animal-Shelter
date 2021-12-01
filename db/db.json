@@ -20,7 +20,7 @@
     },
     {
       "id": "3",
-      "name": "Cecil",
+      "name": "Joe",
       "breed": "cat",
       "age": "2",
       "location": "Atlanta, GA",
@@ -29,7 +29,7 @@
     },
     {
       "id": "4",
-      "name": "Cecil",
+      "name": "Bob",
       "breed": "cat",
       "age": "7",
       "location": "Atlanta, GA",
@@ -38,7 +38,7 @@
     },
     {
       "id": "5",
-      "name": "Cecil",
+      "name": "Charlie",
       "breed": "cat",
       "age": "3",
       "location": "Atlanta, GA",
@@ -47,7 +47,7 @@
     },
     {
       "id": "6",
-      "name": "Cecil",
+      "name": "Fluffy",
       "breed": "cat",
       "age": "2",
       "location": "Atlanta, GA",
@@ -56,7 +56,7 @@
     },
     {
       "id": "7",
-      "name": "Cecil",
+      "name": "Evie",
       "breed": "cat",
       "age": "7",
       "location": "Atlanta, GA",
@@ -110,6 +110,15 @@
       "description": "a",
       "which": "Cecil",
       "id": "7tZjT2F"
+    },
+    {
+      "name": "Sophia",
+      "email": "test@gmail.com",
+      "Location": "Atlanta",
+      "phone": "1111111111",
+      "description": "I love cats!",
+      "which": "Fluffy",
+      "id": "cYFzJLZ"
     }
   ]
 }

@@ -1,3 +1,26 @@
 .centerText {
     text-align: center;
 }
+.list {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 40%;
+  }
+  
+  .container {
+    margin-left: 2.5rem;
+    background-color: white;
+  }
+
+  .heading {
+    text-align: center;
+  }
+
+  .search {
+      display: flex;
+      justify-content: center;
+      margin: 3%;
+  }

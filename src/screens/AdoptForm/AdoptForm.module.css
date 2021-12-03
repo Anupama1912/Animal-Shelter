@@ -1,6 +1,7 @@
 .top {
     display: flex;
     justify-content: center;
+    align-items: center;
     margin-top: 2%;
     margin-left: 5%;
     margin-right: 5%;
@@ -14,16 +15,17 @@
 
 }
 .left {
-    width: 40%;
+    width: 60%;
     margin: 20px;
-    margin-left: 10%;
-
+    margin-left: 0%;
+    margin-right: 0%;
 }
 
 .right {
-    width: 60%;
+    width: 40%;
     margin: 20px;
-    margin-right: 10%;
+    margin-right: 0%;
+    margin-left: 5%;
     margin-top: 4%;
 }
 

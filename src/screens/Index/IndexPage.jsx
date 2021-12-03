@@ -17,24 +17,20 @@ const IndexPage = () => {
     <>
       <div className = {classes.mainContent}>
         <div className= {classes.left}>
-          <Image src="/static/image/homePageCats.jpeg" width={'600'} height={'500'} objectFit={'cover'}/>
+          <Image src="/static/image/Catscout.jpg" width={'600'} height={'500'} objectFit={'contain'}/>
         </div>
         <div className={classes.right}>
           <h1> Welcome to CatScout </h1>
-          <h4> We are an Atlanta based nonprofit that aims to find families for stray cats. </h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-             incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
-             nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore 
-              eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
-               in culpa qui officia deserunt mollit anim id est laborum.
+          <h4> We are an Atlanta based non-profit that aims to find families for stray cats. </h4>
+          <p>This website is a platform through which we strive to unite stray cats and abandoned pets with loving families.
+            Our mission is to rescue homeless cats, provide them with the best medical care and nurturing environment while
+            working to find them a forever home. 
           </p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-             incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
-             nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore 
-              eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
-               in culpa qui officia deserunt mollit anim id est laborum.
+          <p>We are located in Atlanta, Georgia and are open from 10AM - 6PM. <br/> For more information, please contact us:
+          <ul>
+            <li>Email: catscout@gmail.com</li>
+            <li>Phone: 404-123-4567</li>
+          </ul>
           </p>
         </div>
       </div>

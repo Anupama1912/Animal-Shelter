@@ -22,7 +22,7 @@ export default function AdminPage({adopters}) {
       
       {/* <div className={style.list}>
       {
-        adopters && adopters.map(adopter => <AdopterCard adopter={adopter} key={adopter.id}/>)
+        adopters && adopters.map(adopter => <AdopterCard adopter={adopter} key={adopter._id}/>)
       }
     </div> */}
     </div>

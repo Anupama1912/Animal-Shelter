@@ -3,8 +3,9 @@ import Link from "next/link";
 import style from './AnimalCard.module.css'
 
 export default function AnimalCard({animal}) {
+    console.log(animal._id)
     return (
-        <Link href={`/adopt/${animal.id}`}>
+        <Link href={`/adopt/${animal._id}`}>
             <div className = {style.container}>
                 <img className = {style.image} src={animal.image}/>
                 <div className = {style.text}>

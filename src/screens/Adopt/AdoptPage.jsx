@@ -10,7 +10,7 @@ export default function AdoptPage({animals}) {
       <h1 className = {style.heading} >Adopt a Cat</h1>
       <div className={style.list}>
         {
-          animals && animals.map(animal => <AnimalCard animal={animal} key={animal.id}/>)
+          animals && animals.map(animal => <AnimalCard animal={animal} key={animal._id}/>)
         }
       </div>
     </div>

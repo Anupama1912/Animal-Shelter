@@ -4,7 +4,7 @@ import style from './AdoptForm.module.css';
 const AdoptRequest = async event => {
     event.preventDefault()
 
-    const res = await fetch('http://localhost:3001/adopters', {
+    const res = await fetch('http://localhost:3000/api/animals/adopters', {
       body: JSON.stringify({
         name: event.target.name.value,
         email: event.target.email.value,

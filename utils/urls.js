@@ -19,5 +19,9 @@ export default {
       logout: "/api/user/logout",
       getCurrent: "/api/user/get-current",
     },
+    animals: {
+      animals: "/api/animals/animals", //why does no other endpoint work? only the actual file name..
+      adopters: "/api/animals/adopters",
+    },
   },
 };

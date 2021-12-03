@@ -1,7 +1,9 @@
 import AdoptPage from "../../screens/Adopt";
+// import urls from "../../../utils/urls";
 
 export async function getServerSideProps() {
-    const res = await fetch("http://localhost:3001/animals")
+    // console.log(urls.baseUrl)
+    const res = await fetch("http://localhost:3000/api/animals/animals")
     const animals = await res.json()
     return {
         props: { animals }

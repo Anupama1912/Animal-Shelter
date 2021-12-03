@@ -19,7 +19,7 @@ export default function Headerr({ children }) {
     <div className={styles.layout}>
       <header>
         <div className={styles.navbar}>
-          <h1> Catscout </h1>
+          <h1 style={{"margin-left": "20px"}}> Catscout </h1>
           <nav>
             <Link className = {styles.link} href="/"><a> About </a></Link>
             <Link className = {styles.link} href="/adopt"><a> Adopt </a></Link>

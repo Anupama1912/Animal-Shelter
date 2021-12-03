@@ -57,21 +57,21 @@ export default function AdoptFormScreen( {animal} ) {
           <form onSubmit = {AdoptRequest} className= {style.form}>
             <div className = {style.item}>
               <label htmlFor="name">Name: </label>
-              <input className = {style.marginc}  type="text" autoComplete="name" id="name" required/>
+              <input className = {style.marginc}  type="text" autoComplete="name" id="name" placeholder="Full Name" required/>
               <label className = {style.margina}  htmlFor="email">Email: </label>
-              <input className = {style.marginc} type="email" autoComplete="species" id="email" required/>
+              <input className = {style.marginc} type="email" autoComplete="species" id="email" placeholder="hello@gmail.com" required/>
             </div>
             <br />
             <div className = {style.item}>
               <label htmlFor="Location">Location: </label>
-              <input className = {style.margind} type="text" name="" id="Location" required/>
+              <input className = {style.margind} type="text" name="" id="Location" placeholder="Atlanta, Georgia" required/>
               <label className = {style.marginb} htmlFor="phone" >Phone Number: </label>
-              <input className = {style.marginc} type="tel" id="phone" name="phone" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required/>
+              <input className = {style.marginc} type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="1234567890" required/>
             </div>
             <br />
-            <label htmlFor="description">Why do you want to adopt {animal.name}: </label>
+            <label htmlFor="description">Why do you want to adopt {animal.name}? </label>
             <br />
-            <textarea name="description" id="description" cols="80" rows="10"></textarea>
+            <textarea name="description" id="description" cols="80" rows="10" placeholder="Answer" style={{"padding":"2%"}}></textarea>
             {/* <input className = {style.description} type="text" name="" id="description" required/> */}
             <br />
             <input style={{display: showMe?"block":"none"}} type="text" id="which" name={animal.name}/>

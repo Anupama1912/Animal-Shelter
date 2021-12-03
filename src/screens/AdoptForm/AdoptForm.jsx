@@ -4,7 +4,7 @@ import style from './AdoptForm.module.css';
 const AdoptRequest = async event => {
     event.preventDefault()
 
-    const res = await fetch('http://localhost:3000/api/animals/adopters', {
+    const res = await fetch(urls.baseUrl+urls.api.animals.animals, {
       body: JSON.stringify({
         name: event.target.name.value,
         email: event.target.email.value,
@@ -34,7 +34,7 @@ export default function AdoptFormScreen( {animal} ) {
       <div className = {style.body}>
         <div className = {style.top}> 
           <div className = {style.left}>
-            <img src={animal.img} alt="" />
+            <img style={{"max-height": "100%", "max-width": "100%"}} src={animal.image} alt="" />
           </div>
           <div className = {style.right}>
               <p>Name: {animal.name}</p>

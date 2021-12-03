@@ -1,9 +1,12 @@
 import AdoptPageScreen from "../../screens/AdoptForm/AdoptForm";
+import urls from "../../../utils/urls";
 
 export async function getServerSideProps(context) {
     console.log(context.params)
+    console.log("BYE")
     const { query } = context.params
-    const res = await fetch(`http://localhost:3000/api/animals/animals?id=${query}`)
+    console.log(`${urls.baseUrl+urls.api.animals.animals}?_id=${query}`)
+    const res = await fetch(`${urls.baseUrl+urls.api.animals.animals}?_id=${query}`)
     const animal = await res.json()
     console.log(animal[0])
 

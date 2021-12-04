@@ -1,10 +1,23 @@
 import React from "react";
 import style from './AdoptForm.module.css';
+import urls from "../../../utils/urls";
+// import mongoDB from "../../../server/mongodb";
+// import Adopters from "../../../server/mongodb/models/Adopters";
 
-const AdoptRequest = async event => {
+const AdoptRequest = async (event) => {
     event.preventDefault()
 
-    const res = await fetch(urls.baseUrl+urls.api.animals.animals, {
+    // await mongoDB()
+    // await Adopters.create({
+    //   name: event.target.name.value,
+    //   email: event.target.email.value,
+    //   phone: event.target.phone.value,
+    //   desc: event.target.description.value,
+    //   which: event.target.which.name,
+    //   location: event.target.Location.value,
+    // }).then(alert("Done"))
+
+    const res = await fetch(urls.baseUrl+urls.api.animals.adopters, {
       body: JSON.stringify({
         name: event.target.name.value,
         email: event.target.email.value,

@@ -3,9 +3,9 @@ import Image from "next/image";
 import { helloWorld } from "../../actions/General";
 import classes from "./IndexPage.module.css";
 
-const IndexPage = () => {
+const IndexPage = (data) => {
   const [payload, setPayload] = React.useState("");
-
+  console.log(data)
   React.useEffect(() => {
     // Example how to create page without ssr
     helloWorld().then((resp) => {
@@ -20,7 +20,7 @@ const IndexPage = () => {
           <Image src="/static/image/Catscout.jpg" width={'600'} height={'500'} objectFit={'contain'}/>
         </div>
         <div className={classes.right}>
-          <h1> Welcome to CatScout </h1>
+          <h1> {data.helloWorld} </h1>
           <h4> We are an Atlanta based non-profit that aims to find families for stray cats. </h4>
           <p>This website is a platform through which we strive to unite stray cats and abandoned pets with loving families.
             Our mission is to rescue homeless cats, provide them with the best medical care and nurturing environment while

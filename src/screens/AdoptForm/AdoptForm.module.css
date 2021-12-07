@@ -15,14 +15,14 @@
 
 }
 .left {
-    width: 60%;
+    width: 40%;
     margin: 20px;
     margin-left: 0%;
     margin-right: 0%;
 }
 
 .right {
-    width: 40%;
+    width: 60%;
     margin: 20px;
     margin-right: 0%;
     margin-left: 5%;

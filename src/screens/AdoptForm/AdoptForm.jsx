@@ -37,7 +37,7 @@ export default function AdoptFormScreen( {animal} ) {
       <div className = {style.body}>
         <div className = {style.top}> 
           <div className = {style.left}>
-            <img style={{"max-height": "100%", "max-width": "100%"}} src={animal.image} alt="" />
+            <img style={{"max-height": "100%", "max-width": "100%"}} src="/static/image/cat.jpg" alt="" />
           </div>
           <div className = {style.right}>
               <p>Name: {animal.name}</p>

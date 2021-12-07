@@ -7,14 +7,14 @@ import urls from "../../../utils/urls";
 const AdoptRequest = async (event) => {
     event.preventDefault()
 
-    const res = await fetch(urls.baseUrl+urls.api.animals.adopters, {
+    const res = await fetch("http://localhost:3000/api/hello", {
       body: JSON.stringify({
         name: event.target.name.value,
         email: event.target.email.value,
-        Location: event.target.Location.value,
         phone: event.target.phone.value,
-        description: event.target.description.value,
+        desc: event.target.description.value,
         which: event.target.which.name,
+        location: event.target.Location.value,
       }),
       headers: {
         'Content-Type': 'application/json'
@@ -37,7 +37,7 @@ export default function AdoptFormScreen( {animal} ) {
       <div className = {style.body}>
         <div className = {style.top}> 
           <div className = {style.left}>
-            <img style={{"max-height": "100%", "max-width": "100%"}} src={animal.image} alt="" />
+            <img style={{"max-height": "100%", "max-width": "100%"}} src={animal.image} alt="" /> {/*maxWidth and maxHeight*/}
           </div>
           <div className = {style.right}>
               <p>Name: {animal.name}</p>
